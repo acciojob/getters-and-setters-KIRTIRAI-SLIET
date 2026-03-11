@@ -1,9 +1,38 @@
 //complete this code
-class Person {}
+class Person {
+	constructor(name,age) {
+		this.name=name;
+		this.age=age;
+	}
 
-class Student extends Person {}
+	function name() {
+		return name;
+	}
 
-class Teacher extends Person {}
+	function age(age) {
+		this.age=age;
+	}
+}
+
+class Student extends Person {
+	constructor(name) {
+		super(name)
+	}
+	
+	function study() {
+		console.log(this.name, "is strudying");
+	}
+}
+
+class Teacher extends Person {
+	constructor(age) {
+		super(age);
+	}
+	
+	function teach() {
+		console.log(this.age, "is teaching");
+	}
+}
 
 // Do not change the code below this line
 window.Person = Person;
